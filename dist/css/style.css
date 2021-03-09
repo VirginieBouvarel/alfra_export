@@ -378,9 +378,9 @@ ul li {
 /* Background */
 /* Texts */
 body {
-  font-family: "Opensans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
-  color: #333333;
+  color: #485258;
 }
 
 /*
@@ -398,5 +398,66 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   white-space: nowrap;
   /* added line */
   border: 0;
+}
+
+.nav {
+  max-width: 395px;
+  margin: 0 auto;
+}
+
+.nav .nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .nav_item {
+  color: #005D2E;
+  opacity: 0.7;
+  font-family: "Opensans", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.nav .nav_item:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    margin: 0 2rem 0 0;
+    -ms-flex-preferred-size: 395px;
+        flex-basis: 395px;
+  }
+}
+
+.header {
+  padding: 2rem;
+}
+
+.logo {
+  width: 245px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logo {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

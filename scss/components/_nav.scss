@@ -1,0 +1,30 @@
+
+.nav {
+    // outline:1px solid red;
+    max-width:395px;
+    margin:0 auto;
+
+    .nav_list {
+        display:flex;
+        justify-content: space-between;  
+    }
+
+    .nav_item {
+        color:$color-link;
+        opacity:0.7;
+        font-family:$opensans;
+        font-weight:bold;
+        font-size:1.6rem;
+
+        &:hover {
+            opacity:1;
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+    .nav {
+        margin:0 2rem 0 0;
+        flex-basis:395px;
+    }
+}

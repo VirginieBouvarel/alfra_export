@@ -1,0 +1,23 @@
+@import '../components/nav';
+
+.header {
+    padding:2rem;
+    // outline:1px solid red;
+}
+.logo {
+    // outline:1px solid red;
+    width:245px;
+    margin:0 auto;
+    margin-bottom:2rem;
+}
+
+@media screen and (min-width:800px) {
+    .header {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        margin:0;
+    }
+}
