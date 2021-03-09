@@ -399,23 +399,4 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   /* added line */
   border: 0;
 }
-
-.container-big {
-  width: "80%";
-  max-width: "1120px";
-  padding: 2rem;
-  margin: 0 auto;
-}
-
-footer {
-  background: #252088;
-  height: 15rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-footer .copyright {
-  position: relative;
-  top: 10rem;
-}
 /*# sourceMappingURL=style.css.map */
