@@ -23,10 +23,10 @@
 
 @media screen and (min-width:800px) {
     .hero {
-        h2 {
+        &__title {
             font-size:6rem;
         }
-        p {
+        &__subtitle {
             font-size:2.8rem;
         }
     }
