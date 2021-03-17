@@ -1,5 +1,4 @@
 .nav {
-    // outline:1px solid red;
     padding:2rem;
     background-color:$white;
     width:100%;
@@ -8,14 +7,12 @@
    
 
     .logo {
-        // outline:1px solid red;
         width:245px;
         margin:0 auto;
         margin-bottom:2rem;
     }
 
-    .nav_list {
-        // outline:1px solid red;
+    &_list {
         margin:0 auto;
         max-width:395px;
         display:flex;
@@ -23,7 +20,7 @@
     }
 
 
-    .nav_item {
+    &_item {
         color:$color-link;
         opacity:0.7;
         font-family:$opensans;
@@ -43,7 +40,7 @@
         justify-content: flex-end;
         padding:0 2rem;
 
-        .nav_list {
+        &_list {
             margin:0;
             flex-basis:395px;
         }

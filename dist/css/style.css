@@ -400,7 +400,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   border: 0;
 }
 
-.hero a {
+.hero__btn {
   padding: 1.5rem 4rem;
   border-radius: 4px;
   color: #fff;
@@ -410,7 +410,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   cursor: pointer;
 }
 
-.hero a:hover {
+.hero__btn:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
@@ -429,7 +429,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   margin-bottom: 2rem;
 }
 
-.nav .nav_list {
+.nav_list {
   margin: 0 auto;
   max-width: 395px;
   display: -webkit-box;
@@ -440,7 +440,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
           justify-content: space-between;
 }
 
-.nav .nav_item {
+.nav_item {
   color: #005D2E;
   opacity: 0.7;
   font-family: "Opensans", sans-serif;
@@ -448,7 +448,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   font-size: 1.6rem;
 }
 
-.nav .nav_item:hover {
+.nav_item:hover {
   opacity: 1;
 }
 
@@ -465,7 +465,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
             justify-content: flex-end;
     padding: 0 2rem;
   }
-  .nav .nav_list {
+  .nav_list {
     margin: 0;
     -ms-flex-preferred-size: 395px;
         flex-basis: 395px;
@@ -482,19 +482,19 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   text-align: center;
 }
 
-.hero h2 {
+.hero__title {
   font-size: 4.8rem;
   font-weight: bold;
   color: #fff;
   margin-bottom: 1.5rem;
 }
 
-.hero P {
+.hero__subtitle {
   font-size: 2.4rem;
   margin-bottom: 4.6rem;
 }
 
-.hero a {
+.hero__btn {
   background-color: #0B9044;
 }
 
