@@ -1,13 +1,26 @@
-
 .nav {
     // outline:1px solid red;
-    max-width:395px;
-    margin:0 auto;
+    padding:2rem;
+    background-color:$white;
+    width:100%;
+    position: absolute;
+    z-index: 10;
+
+    .logo {
+        // outline:1px solid red;
+        width:245px;
+        margin:0 auto;
+        margin-bottom:2rem;
+    }
 
     .nav_list {
+        // outline:1px solid red;
+        margin:0 auto;
+        max-width:395px;
         display:flex;
         justify-content: space-between;  
     }
+
 
     .nav_item {
         color:$color-link;
@@ -24,7 +37,18 @@
 
 @media screen and (min-width:800px) {
     .nav {
-        margin:0 2rem 0 0;
-        flex-basis:395px;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding:0 2rem;
+        
+        .nav_list {
+            margin:0;
+            flex-basis:395px;
+        }
+        .logo {
+            margin:0 auto 0 0;
+        }
     }
+
 }

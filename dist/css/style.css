@@ -401,11 +401,22 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
 }
 
 .nav {
-  max-width: 395px;
+  padding: 2rem;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.nav .logo {
+  width: 245px;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .nav .nav_list {
+  margin: 0 auto;
+  max-width: 395px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,36 +439,29 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
 
 @media screen and (min-width: 800px) {
   .nav {
-    margin: 0 2rem 0 0;
-    -ms-flex-preferred-size: 395px;
-        flex-basis: 395px;
-  }
-}
-
-.header {
-  padding: 2rem;
-}
-
-.logo {
-  width: 245px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
-
-@media screen and (min-width: 800px) {
-  .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 2rem;
   }
-  .logo {
+  .nav .nav_list {
     margin: 0;
+    -ms-flex-preferred-size: 395px;
+        flex-basis: 395px;
   }
+  .nav .logo {
+    margin: 0 auto 0 0;
+  }
+}
+
+.header {
+  min-height: 100vh;
+  background-color: #0B9044;
 }
 /*# sourceMappingURL=style.css.map */
