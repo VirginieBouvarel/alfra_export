@@ -1,4 +1,5 @@
 .header {
     min-height: 100vh;
-    background-color: $green;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/web/hero-banner.jpg') center;
+	background-size:cover;
 }

@@ -5,6 +5,7 @@
     width:100%;
     position: absolute;
     z-index: 10;
+   
 
     .logo {
         // outline:1px solid red;
@@ -41,7 +42,7 @@
         align-items: center;
         justify-content: flex-end;
         padding:0 2rem;
-        
+
         .nav_list {
             margin:0;
             flex-basis:395px;

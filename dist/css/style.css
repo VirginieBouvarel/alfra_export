@@ -380,7 +380,7 @@ ul li {
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
-  color: #485258;
+  color: #414a4f;
 }
 
 /*
@@ -398,6 +398,21 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   white-space: nowrap;
   /* added line */
   border: 0;
+}
+
+.hero a {
+  padding: 1.5rem 4rem;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.hero a:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .nav {
@@ -460,8 +475,42 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   }
 }
 
+.hero {
+  padding: 36.5rem 3rem;
+  color: #fff;
+  font-family: "Opensans", sans-serif;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.hero P {
+  font-size: 2.4rem;
+  margin-bottom: 4.6rem;
+}
+
+.hero a {
+  background-color: #0B9044;
+}
+
+@media screen and (min-width: 800px) {
+  .hero h2 {
+    font-size: 6rem;
+  }
+  .hero p {
+    font-size: 2.8rem;
+  }
+}
+
 .header {
   min-height: 100vh;
-  background-color: #0B9044;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/web/hero-banner.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/web/hero-banner.jpg") center;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
