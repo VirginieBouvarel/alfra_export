@@ -1,58 +1,54 @@
 .gamme {
     @extend %section;
-
-    .swiper-container {
-        max-width:1300px;
-        width: 100%;
-        padding: 50px 0;
-        height:50rem;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
-    .swiper-slide__title {
-        margin-top:260px;
-        padding:2rem;
-        background-color: $green;
-        color:$white;
-        text-align:center;
-        font-size:1.4rem;
-    }
-    .swiper-pagination-bullet {
-        display:inline-block;
-    }
-    .swiper-pagination-bullet-active {
-        background-color: $green;
-    }
-
+}
+.swiper-container {
+    max-width:1300px;
+    width: 100%;
+    padding: 50px 0;
+    height:50rem;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide__title {
+    margin-top:260px;
+    padding:2rem;
+    background-color: $green;
+    color:$white;
+    text-align:center;
+    font-size:1.4rem;
+}
+.swiper-pagination-bullet {
+    display:inline-block;
+}
+.swiper-pagination-bullet-active {
+    background-color: $green;
 }
 
-@media screen and (min-width:500px) {
-    .gamme {
-        .swiper-container {
-            width:90%;
-        }
-        .swiper-slide__title {
-            font-size:1.6rem;
-        }
-        .swiper-pagination-bullet {
-            display:none;
-        }
+// @media screen and (min-width:500px) {
+//     .gamme {
+//         .swiper-container {
+//             width:90%;
+//         }
+//         .swiper-slide__title {
+//             font-size:1.6rem;
+//         }
+//         .swiper-pagination-bullet {
+//             display:none;
+//         }
 
-    }
+//     }
 
+// }
 
+// @media screen and (min-width:800px) {
+//     .gamme {
+//         .swiper-container {
+//             width:80%;
+//         }
+//     }
 
-}
-
-@media screen and (min-width:800px) {
-    .gamme {
-        .swiper-container {
-            width:80%;
-        }
-    }
-
-}
+// }
