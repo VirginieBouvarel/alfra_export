@@ -377,12 +377,6 @@ ul li {
 /* fonts */
 /* Background */
 /* Texts */
-body {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.6rem;
-  color: #414a4f;
-}
-
 /*
 Classe de masquage d'accessibilité 
 Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilité/SEO ou recommandé par le W3C mais non souhaité sur le design final. L'élément concerné ne sera pas visible par l'utilisateur mais sera pris en compte par les liseuses et les robots de référencement.
@@ -398,6 +392,12 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   white-space: nowrap;
   /* added line */
   border: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  color: #414a4f;
 }
 
 .hero__btn {
