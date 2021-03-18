@@ -475,7 +475,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   }
 }
 
-.realisations, .services {
+.realisations, .services, .gamme {
   padding: 10rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,7 +489,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
           align-items: center;
 }
 
-.realisations h2, .services h2 {
+.realisations h2, .services h2, .gamme h2 {
   color: #414a4f;
   text-align: center;
   text-transform: capitalize;
@@ -499,7 +499,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   margin-bottom: 3.5rem;
 }
 
-.realisations p, .services p {
+.realisations p, .services p, .gamme p {
   max-width: 80rem;
   text-align: center;
   margin-bottom: 3.5rem;
@@ -508,7 +508,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   font-family: sans-serif;
 }
 
-.realisations hr, .services hr {
+.realisations hr, .services hr, .gamme hr {
   width: 15rem;
   height: 2px;
   background-color: #0B9044;
@@ -686,6 +686,55 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   .services .list__item {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
+  }
+}
+
+.gamme .swiper-container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 50px 0;
+  height: 50rem;
+}
+
+.gamme .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.gamme .swiper-slide__title {
+  margin-top: 260px;
+  padding: 2rem;
+  background-color: #0B9044;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.gamme .swiper-pagination-bullet {
+  display: inline-block;
+}
+
+.gamme .swiper-pagination-bullet-active {
+  background-color: #0B9044;
+}
+
+@media screen and (min-width: 500px) {
+  .gamme .swiper-container {
+    width: 90%;
+  }
+  .gamme .swiper-slide__title {
+    font-size: 1.6rem;
+  }
+  .gamme .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gamme .swiper-container {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
