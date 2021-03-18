@@ -475,7 +475,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   }
 }
 
-.realisations, .services, .gamme {
+.realisations, .services, .gamme, .contact {
   padding: 10rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,7 +489,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
           align-items: center;
 }
 
-.realisations h2, .services h2, .gamme h2 {
+.realisations h2, .services h2, .gamme h2, .contact h2 {
   color: #414a4f;
   text-align: center;
   text-transform: capitalize;
@@ -499,7 +499,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   margin-bottom: 3.5rem;
 }
 
-.realisations p, .services p, .gamme p {
+.realisations p, .services p, .gamme p, .contact p {
   max-width: 80rem;
   text-align: center;
   margin-bottom: 3.5rem;
@@ -508,7 +508,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   font-family: sans-serif;
 }
 
-.realisations hr, .services hr, .gamme hr {
+.realisations hr, .services hr, .gamme hr, .contact hr {
   width: 15rem;
   height: 2px;
   background-color: #0B9044;
@@ -669,7 +669,8 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
 }
 
 .services .list__title {
-  color: #555;
+  color: #414a4f;
+  font-family: "Opensans", sans-serif;
   font-size: 2rem;
   margin-bottom: 2.5rem;
 }
@@ -735,6 +736,47 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
 @media screen and (min-width: 800px) {
   .swiper-container {
     width: 80%;
+  }
+}
+
+.contact {
+  background-color: #F7F7F7;
+  padding: 12.5rem 0 20rem;
+}
+
+.contact__content {
+  margin-top: 2rem;
+}
+
+.contact__box {
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 4rem;
+}
+
+.contact__box p {
+  margin: 0;
+}
+
+.contact__icon {
+  color: #0B9044;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .contact__content {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

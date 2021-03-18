@@ -1,0 +1,40 @@
+.contact {
+    @extend %section;
+
+    background-color: $light-gray;
+    padding:12.5rem 0 20rem;
+
+    &__content {
+        margin-top:2rem;
+    }
+
+    &__box {
+        width:100%;
+        text-align:center;
+        line-height:2;
+        margin-bottom:4rem;
+
+        p {
+            margin:0;
+        }
+    }
+
+    &__icon {
+        color:$green;
+        font-size:2rem;
+        margin-bottom:2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .contact {
+        &__content {
+            width:80%;
+            display:flex;
+            align-items:flex-start;
+            justify-content: space-between;
+        }
+    }
+}
+
+
