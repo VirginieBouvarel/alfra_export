@@ -720,12 +720,31 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   background-color: #0B9044;
 }
 
+@media screen and (min-width: 500px) {
+  .swiper-container {
+    width: 90%;
+  }
+  .swiper-slide__title {
+    font-size: 1.6rem;
+  }
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .swiper-container {
+    width: 80%;
+  }
+}
+
 footer {
   background-color: #F7F7F7;
   padding: 2rem 0 4rem;
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
+  font-family: "Opensans", sans-serif;
 }
 
 footer span {
