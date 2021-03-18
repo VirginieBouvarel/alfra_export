@@ -475,7 +475,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   }
 }
 
-.realisations {
+.realisations, .services {
   padding: 10rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,7 +489,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
           align-items: center;
 }
 
-.realisations h2 {
+.realisations h2, .services h2 {
   color: #414a4f;
   text-align: center;
   text-transform: capitalize;
@@ -499,7 +499,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   margin-bottom: 3.5rem;
 }
 
-.realisations p {
+.realisations p, .services p {
   max-width: 80rem;
   text-align: center;
   margin-bottom: 3.5rem;
@@ -508,7 +508,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   font-family: sans-serif;
 }
 
-.realisations hr {
+.realisations hr, .services hr {
   width: 15rem;
   height: 2px;
   background-color: #0B9044;
@@ -555,7 +555,7 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
   background-size: cover;
 }
 
-.realisations .grid {
+.realisations .list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,13 +566,126 @@ Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilit�
           flex-flow: row wrap;
 }
 
-/*
-
-@media screen and (max-width:1100px) {
-	.grid__item {
-		width:100%;
-	}
+.realisations .list__item {
+  margin: 1.5%;
+  height: 35rem;
+  position: relative;
+  width: 100%;
 }
 
-*/
+.realisations .list__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.realisations .list__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0B9044;
+  background-clip: content-box;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.realisations .list__overlay > * {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.realisations .list__overlay:hover {
+  opacity: 0.8;
+}
+
+.realisations .list__overlay:hover > * {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.realisations .list__title {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .realisations .list__item.list__item--small {
+    width: 37%;
+  }
+  .realisations .list__item.list__item--large {
+    width: 57%;
+  }
+}
+
+.services {
+  background-color: #F7F7F7;
+}
+
+.services .list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.services .list__item {
+  padding: 0 3rem;
+  text-align: center;
+  margin: 0 auto 6.5rem;
+}
+
+.services .list__item:last-child {
+  margin-bottom: 0;
+}
+
+.services .list__icon {
+  font-size: 5rem;
+  color: #0B9044;
+  margin-bottom: 2.5rem;
+}
+
+.services .list__title {
+  color: #555;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .services .list__item {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .services .list__item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
